@@ -1,0 +1,11 @@
+{
+  "name": "self-driving-codebases",
+  "description": "Multi-agent workflow for complex task decomposition with recursive planning, parallel workers, and anti-fragility patterns",
+  "version": "1.0.0",
+  "author": {
+    "name": "jh822"
+  },
+  "repository": "https://github.com/jh822/self-driving-codebases",
+  "license": "MIT",
+  "keywords": ["multi-agent", "task-decomposition", "planning", "workflow"]
+}

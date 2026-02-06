@@ -1,0 +1,32 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "type": "prompt",
+        "prompt": "**Self-Driving Codebase Checkpoint**\n\nBefore ending this session, verify:\n- [ ] Implementation matches the original goal\n- [ ] Tests pass or functionality demonstrated\n- [ ] No TODO/FIXME comments left behind\n- [ ] Changes are committed (if appropriate)\n\nIf verification is incomplete, consider continuing to confirm the work.",
+        "matcher": {
+          "path": "*"
+        }
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "type": "prompt",
+        "prompt": "**Complex Task Detected**\n\nThis looks like a substantial task. Consider:\n1. Breaking into 5-20 concrete subtasks first\n2. Using `/self-driving-codebases` for structured decomposition\n3. Identifying the riskiest/most uncertain parts to tackle first\n\nProceed if you've already planned, or decompose first for better results.",
+        "matcher": {
+          "userPrompt": "(implement|create|build|add|develop).{100,}"
+        }
+      }
+    ],
+    "PreToolUse": [
+      {
+        "type": "prompt",
+        "prompt": "**Placeholder Detected**\n\nSelf-driving codebase principle: No unfinished code.\n\nEither:\n- Complete the implementation now\n- Create a separate subtask for this work\n- Remove the placeholder if not needed\n\nPlaceholders create hidden debt and break verification.",
+        "tools": ["Edit", "Write", "MultiEdit"],
+        "matcher": {
+          "input": "(TODO|FIXME|implement later|stub|placeholder)"
+        }
+      }
+    ]
+  }
+}
