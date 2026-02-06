@@ -17,7 +17,7 @@ This plugin implements three core principles:
 ### Method 1: Direct Clone to Plugins Directory
 
 ```bash
-git clone https://github.com/jh822/self-driving-codebases ~/.claude/plugins/self-driving-codebases
+git clone https://github.com/agisw/self-driving-codebases ~/.claude/plugins/self-driving-codebases
 ```
 
 The plugin loads automatically from `~/.claude/plugins/`.
@@ -26,7 +26,7 @@ The plugin loads automatically from `~/.claude/plugins/`.
 
 ```bash
 # Clone to your preferred location
-git clone https://github.com/jh822/self-driving-codebases ~/projects/self-driving-codebases
+git clone https://github.com/agisw/self-driving-codebases ~/projects/self-driving-codebases
 
 # Install via symlink
 cd ~/projects/self-driving-codebases

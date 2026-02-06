@@ -5,7 +5,7 @@
   "author": {
     "name": "jh822"
   },
-  "repository": "https://github.com/jh822/self-driving-codebases",
+  "repository": "https://github.com/agisw/self-driving-codebases",
   "license": "MIT",
   "keywords": ["multi-agent", "task-decomposition", "planning", "workflow"]
 }
